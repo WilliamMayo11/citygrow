@@ -1,3 +1,12 @@
 body {
-  background-color: green;
+  background-color: #C0D890;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#header-text {
+  color: white;
 }

@@ -31,17 +31,9 @@ class GardenList extends Component {
         <div className="list-container">
          {this.showGardens(this.props.collection)}
         </div>
-
-
-
-
   </div>
-
     );
   }
-
 }
-
-
 
 export default GardenList;

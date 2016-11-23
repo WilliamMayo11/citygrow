@@ -3,7 +3,8 @@ import GardenForm from './GardenForm/GardenForm.jsx';
 import GardenList from './GardenList/GardenList.jsx';
 // import GardenListItem from './GardenListItem/GardenListItem.jsx';
 import GardenDisplay from './GardenDisplay/GardenDisplay.jsx';
-// import style from './App.css';
+import style from './App.css';
+import './normalize.css';
 
 class App extends Component {
 
@@ -94,7 +95,7 @@ class App extends Component {
     return (
       <div>
       <header>
-        <h1>CityGrow</h1>
+        <h1 id="header-text">CityGrow</h1>
       </header>
       <GardenForm
         name={this.state.name}
@@ -109,16 +110,16 @@ class App extends Component {
         garden_id={this.state.garden_id}
 
       />
-      <h1>**********Garden List************</h1>
+      <div className="flex-container">
       <GardenList
         getAllGardens={this.getAllGardens.bind(this)}
         collection={this.state.gardens}
         changeSelection={this.changeSelection.bind(this)}
       />
-      <h1>***********Garden Display***********</h1>
       <GardenDisplay
         garden={this.state.selected}
       />
+      </div>
 
       </div>
     );

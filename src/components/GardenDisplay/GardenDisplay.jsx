@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import "./gardenDisplay.css";
+import "./GardenDisplay.css";
 import GardenListItem from '../GardenListItem/GardenListItem.jsx';
 
 export default class GardenDisplay extends Component{
